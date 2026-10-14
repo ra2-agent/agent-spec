@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "id": "starter-idle",
+  "version": "0.1.0",
+  "display_name": "Starter Idle",
+  "description": "不主动发出命令的接口示例，用于开发起步，不是正式参赛者。",
+  "authors": [
+    "kexinoh"
+  ],
+  "license": "Apache-2.0",
+  "source_repository": "https://github.com/ra2-agent/agent-template",
+  "protocol": "ra-arena-full-info-v1",
+  "runtime": "rust-inprocess",
+  "entrypoint": "src/lib.rs",
+  "deterministic": true,
+  "capabilities": {
+    "network": false,
+    "filesystem": false,
+    "subprocess": false
+  },
+  "resources": {
+    "expected_memory_mb": 256,
+    "notes": "引擎内运行；内存声明是参考，v1 没有可靠的逐 Agent CPU/内存计量。"
+  }
+}
